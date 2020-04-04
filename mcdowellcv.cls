@@ -79,7 +79,7 @@
 %                                    Constants                                  -
 %--------------------------------------------------------------------------------
 
-\ifthenelse{\equal{\platformname}{\notwindowsname}}{
+\ifthenelse{\boolean{linux}}{
   \def\namespaceskip{0.575em}
   \def\afterheaderspace{1.1pt}
   \def\beforesectionheaderspace{5pt}
