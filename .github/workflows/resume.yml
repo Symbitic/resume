@@ -27,7 +27,9 @@ jobs:
       
       - name: Test Tectonic
         run: |
-          ls -1 $HOME/.cache
+          ls -1 -a $HOME
+          echo CONDA
+          [ -n "$CONDA" ] && ls -1 $CONDA
           which tectonic
           [ -x "$(command -v tectonic)" ] && tectonic --help
       
