@@ -15,7 +15,7 @@ jobs:
           conda-channels: conda-forge
 
       - name: Install texlive-binaries
-        run: sudo apt-get install texlive-binaries
+        run: sudo apt-get install texlive-binaries fonts-font-awesome
 
       - name: Cache Tectonic
         id: cache
