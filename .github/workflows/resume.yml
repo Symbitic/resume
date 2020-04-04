@@ -17,12 +17,14 @@ jobs:
       - name: Install texlive-binaries
         run: sudo apt-get install texlive-binaries
 
-      - name: Test miniconda
-        run: |
-          conda --version
-          which python
+      - id: cache
+        uses: actions/cache@v1
+        with:
+          path: $CONDA
+          key: tectonic
 
       - name: Install Tectonic
+        if: steps.cache.outputs.cache-hit != 'true'
         run: conda install tectonic
       
       - name: Test Tectonic
@@ -31,8 +33,6 @@ jobs:
           echo $CONDA
           which tectonic
           [ -x "$(command -v tectonic)" ] && tectonic --help
-
-      # [ -n "$CONDA" ] && ls -1 $CONDA
 
       # This step generates the PDF file.
       #- name: Generate resume
