@@ -27,9 +27,9 @@ jobs:
       
       - name: Test Tectonic
         run: |
-          ls -1 $HOME/.cache/Tectonic
+          ls -1 $HOME/.cache
           which tectonic
-          tectonic --help
+          [ -x "$(command -v tectonic)" ] && tectonic --help
       
       # This step generates the PDF file.
       #- name: Generate resume
@@ -41,3 +41,4 @@ jobs:
       #  with:
       #    name: resume
       #    path: output.pdf
+# [ -x "$(command -v foo)" ]
