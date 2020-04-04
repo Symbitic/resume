@@ -17,7 +17,8 @@ jobs:
       - name: Install texlive-binaries
         run: sudo apt-get install texlive-binaries
 
-      - id: cache
+      - name: Cache Tectonic
+        id: cache
         uses: actions/cache@v1
         with:
           path: $CONDA
@@ -34,9 +35,8 @@ jobs:
           which tectonic
           [ -x "$(command -v tectonic)" ] && tectonic --help
 
-      # This step generates the PDF file.
-      #- name: Generate resume
-      #  run: tectonic output.tex
+      - name: Generate resume
+        run: tectonic output.tex
 
      # Upload the completed resume.
       #- name: Upload resume
