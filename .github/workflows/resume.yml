@@ -6,30 +6,35 @@ jobs:
     name: Main
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: s-weigand/setup-conda@v1
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install conda
+        uses: s-weigand/setup-conda@v1
+
       - name: Install texlive-binaries
         run: sudo apt-get install texlive-binaries
-      # This step uses GitHub's hello-world-javascript-action: https://github.com/actions/hello-world-javascript-action
-      - name: Hello world
-        uses: actions/hello-world-javascript-action@v1
-        with:
-          who-to-greet: 'Mona the Octocat'
-        id: hello
-      # This step prints an output (time) from the previous step's action.
-      - name: Echo the greeting's time
-        run: echo 'The time was ${{ steps.hello.outputs.time }}.'
-      # This step tests to make sure miniconda works.
+
       - name: Test miniconda
         run: |
           conda --version
           which python
+
+      - name: Install Tectonic
+        run: conda install tectonic
+      
+      - name: Test Tectonic
+        run: |
+          ls -1 $HOME/.cache/Tectonic
+          which tectonic
+      
       # This step generates the PDF file.
-      - name: Generate resume
-        run: tectonic output.tex
-      # Upload the completed resume.
-      - name: Upload resume
-        uses: actions/upload-artifact@v1
-        with:
-          name: resume
-          path: output.pdf
+      #- name: Generate resume
+      #  run: tectonic output.tex
+
+     # Upload the completed resume.
+      #- name: Upload resume
+      #  uses: actions/upload-artifact@v1
+      #  with:
+      #    name: resume
+      #    path: output.pdf
