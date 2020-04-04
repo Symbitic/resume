@@ -1,16 +1,15 @@
-name: Greet Everyone
-# This workflow is triggered on pushes to the repository.
+name: Build Resume
 on: [push]
 
 jobs:
   build:
-    # Job name is Greeting
-    name: Greeting
-    # This job runs on Linux
+    name: Main
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: s-weigand/setup-conda@v1
+      - name: Install texlive-binaries
+        run: sudo apt-get install texlive-binaries
       # This step uses GitHub's hello-world-javascript-action: https://github.com/actions/hello-world-javascript-action
       - name: Hello world
         uses: actions/hello-world-javascript-action@v1
@@ -25,3 +24,12 @@ jobs:
         run: |
           conda --version
           which python
+      # This step generates the PDF file.
+      - name: Generate resume
+        run: tectonic output.tex
+      # Upload the completed resume.
+      - name: Upload resume
+        uses: actions/upload-artifact@v1
+        with:
+          name: resume
+          path: output.pdf
