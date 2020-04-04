@@ -27,12 +27,13 @@ jobs:
       
       - name: Test Tectonic
         run: |
-          ls -1 -a $HOME
-          echo CONDA
-          [ -n "$CONDA" ] && ls -1 $CONDA
+          echo $HOME
+          echo $CONDA
           which tectonic
           [ -x "$(command -v tectonic)" ] && tectonic --help
-      
+
+      # [ -n "$CONDA" ] && ls -1 $CONDA
+
       # This step generates the PDF file.
       #- name: Generate resume
       #  run: tectonic output.tex
