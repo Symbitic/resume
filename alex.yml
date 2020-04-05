@@ -1,0 +1,83 @@
+---
+name: Alexander L. Shaw
+website: https://alshaw.io
+
+address:
+  street: 103 G Street SW, B214
+  city: Washington
+  state: D.C.
+  zip: 20024
+
+social:
+  github: Symbitic
+  twitter: heartcmy
+
+contacts:
+  phone: (815) 590-3550
+  email: alex.shaw.as@gmail.com
+
+education:
+  - dates: 08/20/2012—05/15/2015, 08/14/2017—12/21/2017
+    location: Bloomington, IL
+    name: Illinois State University
+    notes:
+      - >
+        \textbf{Major:} Information Technology — IT Security
+      - >
+        \textbf{Coursework:} Calculus; Databases; Java; C++; Cryptography; Systems Development
+
+employment:
+  - dates: 8/6/2018—present \linebreak 40 hours/week
+    employer: Census Bureau
+    title: IT Specialist (App Software)
+    description:
+      - details:
+        - Our branch is responsible for maintaining and updating the national database of addresses.
+        - Regularly check, process, and merge incoming data from customers, such as the USPS.
+        - Currently in the process of helping our branch transition to using Agile and GitLab.
+        - Created csv2table to make transfering incoming data to tables for manipulation much faster.
+        - Also created SQLDump, which performs the reverse—dumps the results of a SQL query to a CSV file.
+        - Oral communication and problem-solving skills used on a daily basis.
+        - Successfully completed a training session in web scraping and machine learning.
+        - \underline{Technologies used} includes Oracle 11g, PL/SQL, Java, RHEL, Unix shell scripting.
+
+projects:
+  - title: csv2table
+    details:
+      - Created for the Census Bureau.
+      - Our workflow required regularly loading CSV data from customers into an OracleDB table.
+      - Regular solution was to use SQLLOADER, a cumbersome and unintuitive process.
+      - csv2table was an easy-to-use tool that automated the process, making it much faster to complete.
+      - Source code unavailable; proprietary and property of the Census Bureau.
+      - >
+        \underline{Utilized}: Java, JDBC, SQL, OracleDB.
+  - title: Timeline of Terror
+    details:
+      - As a government worker, I was inspired to modernize the excellent \href{https://en.wikipedia.org/wiki/The_Terror_Timeline}{Terror Timeline} by Paul Thompson.
+      - Original used JavaServer Pages and MySQL. Stated cost was several hundred dollars per-year.
+      - New version uses Gatsby, React, and GraphQL for server-side static rendering. Total cost is $12/year.
+      - Not endorsed, condoned, or approved by the Census Bureau or any other government agency.
+      - >
+        \underline{Utilized}: Gatsby, React.js, Node.js, GraphQL, CSS.
+  - title: markbook
+    details:
+      - Tool for writing books and complex technical documentation in Markdown.
+      - MVP in three days, feature parity with mdBook in two weeks.
+      - Extensive unit testing and integration testing.
+      - >
+        Features: PDF/HTML/ePub output, APA citations, bibliography.
+      - >
+        \underline{Utilized}: JavaScript, Markdown, Remark.js, Jest, Babel.
+
+skills:
+  - type: Programming Languages
+    details: >
+      (\textit{expert}): C, C++, JavaScript, Bash, HTML/CSS (\textit{familiar}): Java, SQL, COBOL (\textit{learning}): Python, Rust, LaTeX
+  - type: Software
+    details: >
+      Git, Linux, Agile, Node.js, Oracle 11g, Visual Studio Code, MongoDB, Qt5, Angular.js, React.js, Machine Learning, Amazon Web Services
+
+note: Schedule A and Contacts available upon request
+
+---
+
