@@ -25,6 +25,7 @@
 
 % Set up the fonts according to options
 \def\mainfontsize{11pt}
+\def\mainfontface{Times New Roman}
 
 \ProcessOptions\relax
 
@@ -38,6 +39,12 @@
 % Set font face
 % \usepackage{mathptmx}
 % \usepackage[T1]{fontenc}
+% \usepackage{fontspec}
+% \setmainfont[SmallCapsFeatures={Renderer=Basic},
+% Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
+% \setmainfont{Times New Roman}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
 
 % Remove paragraph indentation
 \usepackage[parfill]{parskip} 
