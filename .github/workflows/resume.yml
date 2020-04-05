@@ -6,6 +6,9 @@ jobs:
     name: Main
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
       - name: Install LaTeX
         run: sudo apt-get install fonts-font-awesome texlive-base texlive-fonts-extra texlive-latex-extra texlive-luatex
 
@@ -13,12 +16,12 @@ jobs:
         run: |
           wget https://github.com/jgm/pandoc/releases/download/2.9.2.1/pandoc-2.9.2.1-linux-amd64.tar.gz
           tar -xvf pandoc-2.9.2.1-linux-amd64.tar.gz --strip-components=2 pandoc-2.9.2.1/bin/pandoc
-      
+
       - name: Generate resume
-        run: ./pandoc --template resume.pandoc.tex --pdf-engine=lualatex -o output.pdf -f markdown alex.yml
+        run: ./pandoc --template resume.pandoc.tex --pdf-engine=lualatex -o output1.pdf -f markdown alex.yml
 
       - name: Upload resume
         uses: actions/upload-artifact@v1
         with:
           name: resume
-          path: output.pdf
+          path: output1.pdf
