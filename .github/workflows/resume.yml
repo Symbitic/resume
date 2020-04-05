@@ -9,34 +9,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Install conda
-        uses: s-weigand/setup-conda@v1
-        with:
-          conda-channels: conda-forge
+      - name: Install LaTeX
+        run: sudo apt-get install fonts-font-awesome texlive-base texlive-fonts-extra texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-luatex texlive-publishers texlive-xetex
 
-      - name: Install texlive-binaries
-        run: sudo apt-get install texlive-binaries fonts-font-awesome
-
-      - name: Cache Tectonic
-        id: cache
-        uses: actions/cache@v1
-        with:
-          path: $CONDA
-          key: tectonic
-
-      - name: Install Tectonic
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: conda install tectonic
-      
-      - name: Test Tectonic
+      - name: Install pandoc
         run: |
-          echo $HOME
-          echo $CONDA
-          which tectonic
-          [ -x "$(command -v tectonic)" ] && tectonic --help
-
+          wget https://github.com/jgm/pandoc/releases/download/2.9.2.1/pandoc-2.9.2.1-linux-amd64.tar.gz
+          tar -xvf pandoc-2.9.2.1-linux-amd64.tar.gz --strip-components=2 pandoc-2.9.2.1/bin/pandoc
+      
       - name: Generate resume
-        run: tectonic output.tex
+        run: ./pandoc --template resume.pandoc.tex --pdf-engine=lualatex -o output.pdf -f markdown alex.yml
 
      # Upload the completed resume.
       #- name: Upload resume
@@ -44,4 +26,3 @@ jobs:
       #  with:
       #    name: resume
       #    path: output.pdf
-# [ -x "$(command -v foo)" ]
