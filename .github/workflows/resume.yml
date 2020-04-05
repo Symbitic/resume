@@ -18,10 +18,23 @@ jobs:
           tar -xvf pandoc-2.9.2.1-linux-amd64.tar.gz --strip-components=2 pandoc-2.9.2.1/bin/pandoc
 
       - name: Generate resume
-        run: ./pandoc --template resume.pandoc.tex --pdf-engine=lualatex -o output1.pdf -f markdown alex.yml
+        run: ./pandoc --template resume.pandoc.tex --pdf-engine=lualatex -o resume.pdf -f markdown alex.yml
 
-      - name: Upload resume
-        uses: actions/upload-artifact@v1
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          name: resume
-          path: output1.pdf
+          release_name: Release ${{ github.ref }}
+
+      - name: Upload Release Asset
+        id: upload-release-asset 
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./resume.pdf
+          asset_name: resume.pdf
+          asset_content_type: application/pdf
