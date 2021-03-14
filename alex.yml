@@ -1,16 +1,16 @@
 ---
 name: Alexander L. Shaw
-website: https://alshaw.io
+website: https://alexshaw.xyz
 
 address:
-  street: 103 G Street SW, B214
+  street: 1151 4th Street SW, 714
   city: Washington
   state: D.C.
   zip: 20024
 
 social:
   github: Symbitic
-  twitter: heartcmy
+  twitter: as0355
 
 contacts:
   phone: (815) 590-3550
@@ -62,7 +62,7 @@ projects:
   - title: markbook
     details:
       - Tool for writing books and complex technical documentation in Markdown.
-      - MVP in three days, feature parity with mdBook in two weeks.
+      - MVP in three days, feature parity with production-quality mdBook in two weeks.
       - Extensive unit testing and integration testing.
       - >
         Features: PDF/HTML/ePub output, APA citations, bibliography.
