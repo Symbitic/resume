@@ -4,4 +4,4 @@
 
 Alex Shaw's Résumé.
 
-The latest can always be found at <https://github.com/Symbitic/test/releases/download/latest/resume.pdf>.
+The latest can always be found at <https://github.com/Symbitic/resume/releases/download/latest/resume.pdf>.
