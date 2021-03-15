@@ -51,14 +51,14 @@ projects:
       - Source code unavailable; proprietary and property of the Census Bureau.
       - >
         \underline{Utilized}: Java, JDBC, SQL, OracleDB.
-  - title: Timeline of Terror
+  - title: SqlTest
     details:
-      - As a government worker, I was inspired to modernize the excellent \href{https://en.wikipedia.org/wiki/The_Terror_Timeline}{Terror Timeline} by Paul Thompson.
-      - Original used JavaServer Pages and MySQL. Stated cost was several hundred dollars per-year.
-      - New version uses Gatsby, React, and GraphQL for server-side static rendering. Total cost is $12/year.
-      - Not endorsed, condoned, or approved by the Census Bureau or any other government agency.
+      - Complete suite of programs for automated acceptance testing of SQL queries.
+      - Testing was a laborious and repetitive process done entirely manually, with little collaboration.
+      - Encourages collaboration by allowing test data to be created by customers.
+      - Available as a command-line tool and GUI.
       - >
-        \underline{Utilized}: Gatsby, React.js, Node.js, GraphQL, CSS.
+        \underline{Utilized}: C++, Qt, QML, CSV, SQL, SQLite.
   - title: markbook
     details:
       - Tool for writing books and complex technical documentation in Markdown.
@@ -75,7 +75,7 @@ skills:
       (\textit{expert}): C, C++, JavaScript, Bash, HTML/CSS (\textit{familiar}): Java, SQL, COBOL (\textit{learning}): Python, Rust, LaTeX
   - type: Software
     details: >
-      Git, Linux, Agile, Node.js, Oracle 11g, Visual Studio Code, MongoDB, Qt5, Angular.js, React.js, Machine Learning, Amazon Web Services
+      (\textit{expert}): Git, Linux, Node.js, Qt5,  React.js, Oracle 11g
 
 note: Schedule A and Contacts available upon request
 
