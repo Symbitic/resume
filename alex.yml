@@ -59,15 +59,14 @@ projects:
       - Available as a command-line tool and GUI.
       - >
         \underline{Utilized}: C++, Qt, QML, CSV, SQL, SQLite.
-  - title: markbook
+  - title: standard-release
     details:
-      - Tool for writing books and complex technical documentation in Markdown.
-      - MVP in three days, feature parity with production-quality mdBook in two weeks.
-      - Extensive unit testing and integration testing.
+      - Tool for automating the entire software release process with a single program.
+      - Installs git hooks to enforce a standardized format for commit messages.
+      - Parses commit messages to determine new release version and CHANGELOG entry.
+      - Writes the new version number, generates CHANGELOG, commits changes, creates a git tag, pushes all changes to upstream.
       - >
-        Features: PDF/HTML/ePub output, APA citations, bibliography.
-      - >
-        \underline{Utilized}: JavaScript, Markdown, Remark.js, Jest, Babel.
+        \underline{Utilized}: C++, libgit2, cmark, YAML, CommonMark, SemVer, Conventional Commits.
 
 skills:
   - type: Programming Languages
