@@ -71,10 +71,10 @@ projects:
 skills:
   - type: Programming Languages
     details: >
-      (\textit{expert}): C, C++, JavaScript, Bash, HTML/CSS (\textit{familiar}): Java, SQL, COBOL (\textit{learning}): Python, Rust, LaTeX
+      (\textit{expert}): C, C++, TypeScript, Bash, HTML/CSS (\textit{familiar}): Java, SQL, COBOL (\textit{learning}): Python, Rust, LaTeX
   - type: Software
     details: >
-      (\textit{expert}): Git, Linux, Node.js, Qt5,  React.js, Oracle 11g
+      (\textit{expert}): Git, Linux, Node.js, Qt5,  React.js, Oracle 11g (\textit{learning}): gRPC, TensorFlow
 
 note: Schedule A and Contacts available upon request
 
