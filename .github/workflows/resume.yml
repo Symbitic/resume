@@ -1,4 +1,4 @@
-name: Build Resume
+name: Build
 on: [push]
 
 jobs:
@@ -6,36 +6,28 @@ jobs:
     name: Main
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: checkout
         uses: actions/checkout@v2
 
-      - name: Install LaTeX
+      - name: date
+        run: echo "TAG_NAME=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
+
+      - name: install
         run: sudo apt-get install fonts-font-awesome texlive-base texlive-fonts-extra texlive-latex-extra texlive-luatex
 
-      - name: Install pandoc
+      - name: pandoc
         run: |
           wget https://github.com/jgm/pandoc/releases/download/2.9.2.1/pandoc-2.9.2.1-linux-amd64.tar.gz
           tar -xvf pandoc-2.9.2.1-linux-amd64.tar.gz --strip-components=2 pandoc-2.9.2.1/bin/pandoc
 
-      - name: Generate resume
+      - name: generate
         run: ./pandoc --template resume.pandoc.tex --pdf-engine=lualatex -o resume.pdf -f markdown alex.yml
 
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
+      - name: upload
+        uses: softprops/action-gh-release@v1
+        with:
+          name: Release ${{ env.TAG_NAME }}
+          tag_name: ${{ env.TAG_NAME }}
+          files: resume.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ github.run_id }}
-          release_name: Release ${{ github.run_id }}
-
-      - name: Upload Release Asset
-        id: upload-release-asset 
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./resume.pdf
-          asset_name: resume.pdf
-          asset_content_type: application/pdf
