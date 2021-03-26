@@ -68,8 +68,6 @@ projects:
       - >
         \underline{Utilized}: C++, libgit2, cmark, YAML, CommonMark, SemVer, Conventional Commits.
 
-  - title: Other projects: litexa-ts (literate Alexa skills), markbook, aws-transcribe-to-srt
-
 skills:
   - type: Programming Languages
     details: >
