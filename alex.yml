@@ -24,7 +24,7 @@ education:
       - >
         \textbf{Major:} Information Technology — IT Security
       - >
-        \textbf{Coursework:} Calculus; Databases; Java; C++; Cryptography; Systems Development
+        \textbf{Coursework:} Databases; Java; C++; Cryptography; Calculus; Systems Development
 
 employment:
   - dates: 8/6/2018—present \linebreak 40 hours/week
@@ -34,7 +34,7 @@ employment:
       - details:
         - Our branch is responsible for maintaining and updating the national database of addresses.
         - Regularly check, process, and merge incoming data from customers, such as the USPS.
-        - Currently in the process of helping our branch transition to using Agile and GitLab.
+        - Responsible for helping our branch transition to using Agile and GitLab.
         - Created csv2table to make transfering incoming data to tables for manipulation much faster.
         - Also created SQLDump, which performs the reverse—dumps the results of a SQL query to a CSV file.
         - Oral communication and problem-solving skills used on a daily basis.
@@ -68,13 +68,15 @@ projects:
       - >
         \underline{Utilized}: C++, libgit2, cmark, YAML, CommonMark, SemVer, Conventional Commits.
 
+  - title: Other projects: litexa-ts (literate Alexa skills), markbook, aws-transcribe-to-srt
+
 skills:
   - type: Programming Languages
     details: >
       (\textit{expert}): C, C++, TypeScript, Bash, HTML/CSS (\textit{familiar}): Java, SQL, COBOL (\textit{learning}): Python, Rust, LaTeX
   - type: Software
     details: >
-      (\textit{expert}): Git, Linux, Node.js, Qt5,  React.js, Oracle 11g (\textit{learning}): gRPC, TensorFlow
+      (\textit{expert}): Git, Linux, Node.js, Qt5,  React.js, Oracle 11g (\textit{learning}): gRPC, TensorFlow, Amazon Web Services, Alexa
 
 note: Schedule A and Contacts available upon request
 
