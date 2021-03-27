@@ -1,6 +1,7 @@
 ---
 name: Alexander L. Shaw
 website: https://alexshaw.xyz
+# projectsurl: https://alexshaw.xyz/projects/
 
 address:
   street: 1151 4th Street SW, 714
@@ -27,7 +28,7 @@ education:
         \textbf{Coursework:} Databases; Java; C++; Cryptography; Calculus; Systems Development
 
 employment:
-  - dates: 8/6/2018—present \linebreak 40 hours/week
+  - dates: 8/6/2018—present
     employer: Census Bureau
     title: IT Specialist (App Software)
     description:
@@ -42,26 +43,34 @@ employment:
         - \underline{Technologies used} includes Oracle 11g, PL/SQL, Java, RHEL, Unix shell scripting.
 
 projects:
-  - title: csv2table
-    details:
-      - Created for the Census Bureau.
-      - Our workflow required regularly loading CSV data from customers into an OracleDB table.
-      - Regular solution was to use SQLLOADER, a cumbersome and unintuitive process.
-      - csv2table was an easy-to-use tool that automated the process, making it much faster to complete.
-      - Source code unavailable; proprietary and property of the Census Bureau.
-      - >
-        \underline{Utilized}: Java, JDBC, SQL, OracleDB.
+  #- title: csv2table
+  #  details:
+  #    - Created for the Census Bureau.
+  #    - Our workflow required regularly loading CSV data from customers into an OracleDB table.
+  #    - Regular solution was to use SQLLOADER, a cumbersome and unintuitive process.
+  #    - csv2table was an easy-to-use tool that automated the process, making it much faster to complete.
+  #    - Source code unavailable; proprietary and property of the Census Bureau.
+  #    - >
+  #      \underline{Utilized}: Java, JDBC, SQL, OracleDB.
   - title: SqlTest
     details:
-      - Complete suite of programs for automated acceptance testing of SQL queries.
+      - Complete suite of programs for automating acceptance testing of SQL queries.
       - Testing was a laborious and repetitive process done entirely manually, with little collaboration.
       - Encourages collaboration by allowing test data to be created by customers.
       - Available as a command-line tool and GUI.
       - >
-        \underline{Utilized}: C++, Qt, QML, CSV, SQL, SQLite.
+        \underline{Utilized}: C++, Qt5, QML, CSV, SQL, SQLite.
+  - title: litexa-ts
+    details:
+      - Fork of litexa toolchain refactored to use Typescript.
+      - Litexa is a Alexa Labs project to allow developing Alexa skills in English-like language.
+      - Original uses Coffeescript, which is old and increasingly difficult to maintain.
+      - Not a trivial refactor; original version heavily abuses coffeescript and commonjs.
+      - >
+        \underline{Utilized}: Typescript, AWS, Alexa, Node.js, Literate programming.
   - title: standard-release
     details:
-      - Tool for automating the entire software release process with a single program.
+      - Tool for automating the entire software release process using a single program.
       - Installs git hooks to enforce a standardized format for commit messages.
       - Parses commit messages to determine new release version and CHANGELOG entry.
       - Writes the new version number, generates CHANGELOG, commits changes, creates a git tag, pushes all changes to upstream.
@@ -76,7 +85,8 @@ skills:
     details: >
       (\textit{expert}): Git, Linux, Node.js, Qt5,  React.js, Oracle 11g (\textit{learning}): gRPC, TensorFlow, Amazon Web Services, Alexa
 
-note: Schedule A and Contacts available upon request
+# otherprojects: litexa-ts, markbook, aws-transcribe-to-srt, timeline-of-terror
+# note: Schedule A and Contacts available upon request
 
 ---
 

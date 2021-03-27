@@ -99,9 +99,14 @@ $endif$
       \end{itemize}
     \end{cvsubsection}
     $endfor$
+
+    $if(otherprojects)$
+    \begin{cvsubsectiontext}{\textbf{Additional Projects:} $otherprojects$}
+    \end{cvsubsectiontext}
+    $endif$
   \end{cvsection}
   $endif$
-  
+
   $if(skills)$
   \begin{cvsection}{Skills}
     \begin{cvsubsection}{}{}{}
