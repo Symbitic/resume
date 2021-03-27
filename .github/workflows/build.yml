@@ -9,8 +9,24 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
 
+      - name: cache
+        uses: actions/cache@v2
+        id: cache
+        with:
+            path: "~/apt"
+            key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
+
       - name: install
-        run: sudo apt-get install fonts-font-awesome texlive-base texlive-fonts-extra texlive-latex-extra texlive-luatex
+        env:
+          CACHE_HIT: ${{steps.cache.outputs.cache-hit}}
+        run: |
+            if [[ "$CACHE_HIT" == 'true' ]]; then
+              sudo cp --force --recursive ~/apt/* /
+            else
+              sudo apt-get install --yes fonts-font-awesome texlive-base texlive-fonts-extra texlive-latex-extra texlive-luatex
+              mkdir -p ~/apt
+              sudo dpkg -L fonts-font-awesome texlive-base texlive-fonts-extra texlive-latex-extra texlive-luatex | while IFS= read -r f; do if test -f $f; then echo $f; fi; done | xargs cp --parents --target-directory ~/apt/
+            fi
 
       - name: pandoc
         run: |

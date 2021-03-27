@@ -1,6 +1,6 @@
 # Resume
 
-![badge](https://github.com/Symbitic/resume/workflows/build/badge.svg)
+![Build](https://github.com/Symbitic/resume/actions/workflows/build.yml/badge.svg)
 
 Alex Shaw's Résumé.
 
