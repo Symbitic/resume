@@ -9,9 +9,6 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
 
-      - name: date
-        run: echo "TAG_NAME=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
-
       - name: install
         run: sudo apt-get install fonts-font-awesome texlive-base texlive-fonts-extra texlive-latex-extra texlive-luatex
 
@@ -26,8 +23,8 @@ jobs:
       - name: upload
         uses: softprops/action-gh-release@v1
         with:
-          name: Release ${{ env.TAG_NAME }}
-          tag_name: ${{ env.TAG_NAME }}
+          name: Release ${{ github.run_number }}
+          tag_name: release-${{ github.run_number }}
           files: resume.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
