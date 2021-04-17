@@ -1,7 +1,6 @@
 ---
 name: Alexander L. Shaw
 website: https://alexshaw.xyz
-linkedin: alex-shaw-8b2450196
 # projectsurl: https://alexshaw.xyz/projects/
 
 address:
@@ -11,6 +10,7 @@ address:
   zip: 20024
 
 social:
+  linkedin: alex-shaw-8b2450196
   github: Symbitic
   twitter: as0355
 
