@@ -19,28 +19,27 @@ contacts:
   email: alex.shaw.as@gmail.com
 
 education:
-  - dates: 08/20/2012—05/15/2015, 08/14/2017—12/21/2017
+  - dates: Fall 2012—2015, Fall 2017
     location: Bloomington, IL
     name: Illinois State University
     notes:
       - >
-        \textbf{Major:} Information Technology — IT Security
+        \textbf{Major:} Information Technology, B.S.
       - >
-        \textbf{Coursework:} Databases; Java; C++; Cryptography; Calculus; Systems Development
+        \textbf{Coursework:} Databases, Java, C++, Cryptography, Calculus, Systems Development
 
 employment:
-  - dates: 8/6/2018—present
-    employer: Census Bureau
+  - dates: Fall 2018—present
+    employer: U.S. Census Bureau
     title: IT Specialist (App Software)
     description:
       - details:
         - Our branch is responsible for maintaining and updating the national database of addresses.
-        - Regularly check, process, and merge incoming data from customers, such as the USPS.
-        - Responsible for helping our branch transition to using Agile and GitLab.
-        - Created csv2table to make transfering incoming data to tables for manipulation much faster.
-        - Also created SQLDump, which performs the reverse—dumps the results of a SQL query to a CSV file.
+        - Regularly check, process, and merge incoming data from customers, such as the U.S. Postal Service.
+        - Created csv2table, a program to make transfering incoming data to tables for manipulation much faster.
+        #- Also created SQLDump, which performs the reverse- dumping the results of a SQL query to a CSV file.
         - Oral communication and problem-solving skills used on a daily basis.
-        - Successfully completed a training session in web scraping and machine learning.
+        - Successfully completed training sessions in web scraping and machine learning.
         - \underline{Technologies used} includes Oracle 11g, PL/SQL, Java, RHEL, Unix shell scripting.
 
 projects:
@@ -52,32 +51,37 @@ projects:
   #    - csv2table was an easy-to-use tool that automated the process, making it much faster to complete.
   #    - Source code unavailable; proprietary and property of the Census Bureau.
   #    - >
-  #      \underline{Utilized}: Java, JDBC, SQL, OracleDB.
+  #      \underline{Utilized}: Java, JDBC, SQL, Oracle
   - title: SqlTest
     details:
-      - Complete suite of programs for automating acceptance testing of SQL queries.
-      - Testing was a laborious and repetitive process done entirely manually, with little collaboration.
-      - Encourages collaboration by allowing test data to be created by customers.
-      - Available as a command-line tool and GUI.
+      - Complete suite of programs for automated acceptance testing of SQL queries.
+      - Encourages collaboration with customers.
+      - Reduced time for executing test suites from 5 minutes to 30 seconds by removing manual database editing. 
       - >
-        \underline{Utilized}: C++, Qt5, QML, CSV, SQL, SQLite.
+        \underline{Utilized}: C++, Qt5, QML, CSV, SQL, SQLite
   - title: litexa-ts
     details:
       - Fork of litexa toolchain refactored to use Typescript.
       - Litexa is a Alexa Labs project to allow developing Alexa skills in English-like language.
-      - Original uses Coffeescript, which is old and increasingly difficult to maintain.
+      - Original uses Coffeescript, which is old and difficult to maintain.
       - Not a trivial refactor; original version heavily abuses coffeescript and commonjs.
       - >
-        \underline{Utilized}: Typescript, AWS, Alexa, Node.js, Literate programming.
+        \underline{Utilized}: Typescript, AWS, Alexa, Node.js, Literate programming
   - title: standard-release
     details:
       - Tool for automating the entire software release process using a single program.
       - Installs git hooks to enforce a standardized format for commit messages.
       - Parses commit messages to determine new release version and CHANGELOG entry.
-      - Writes the new version number, generates CHANGELOG, commits changes, creates a git tag, pushes all changes to upstream.
+      - Increments the version number, generates CHANGELOG, commits changes, creates a git tag, and pushes changes upstream.
+      - Decreased incorrect software releases by 75% by enforcing workflow standards.
       - >
-        \underline{Utilized}: C++, libgit2, cmark, YAML, CommonMark, SemVer, Conventional Commits.
-
+        \underline{Utilized}: C++, libgit2, cmark, YAML, CommonMark, SemVer, Conventional Commits
+  - title: 9/11 Timeline
+    details:
+      - Modernization of the excellent \href{https://en.wikipedia.org/wiki/The_Terror_Timeline}{Terror Timeline} by Paul Thompson.
+      - Reduced yearly server costs from several hundred dollars to $12/year by refactoring to use GatsbyJS.
+      - >
+        \underline{Utilized}: Gatsby, React.js, Node.js, GraphQL, CSS
 skills:
   - type: Programming Languages
     details: >
