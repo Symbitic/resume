@@ -8,11 +8,14 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
 
       - name: install
-        run: sudo apt-get install fonts-font-awesome texlive-base texlive-fonts-extra texlive-latex-extra texlive-luatex
+        run: sudo apt-get install fonts-font-awesome graphicsmagick-imagemagick-compat texlive-base texlive-fonts-extra texlive-latex-extra texlive-luatex
 
-      - name: pandoc
+      - name: download
         run: |
           wget https://github.com/jgm/pandoc/releases/download/2.9.2.1/pandoc-2.9.2.1-linux-amd64.tar.gz
           tar -xvf pandoc-2.9.2.1-linux-amd64.tar.gz --strip-components=2 pandoc-2.9.2.1/bin/pandoc
@@ -28,3 +31,19 @@ jobs:
           files: resume.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: convert
+        run: |
+        convert resume.pdf resume.png
+
+      - name: commit
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -m "chore(release): regenerate preview" -a
+      
+      - name: push
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
