@@ -1,4 +1,5 @@
 name: Build
+
 on: [push]
 
 jobs:
@@ -34,7 +35,7 @@ jobs:
 
       - name: convert
         run: |
-        convert resume.pdf resume.png
+          convert resume.pdf resume.png
 
       - name: commit
         run: |
