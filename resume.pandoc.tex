@@ -47,23 +47,6 @@ $endif$
   \makeheader
 
   % Print the content
-  $if(education)$
-  \begin{cvsection}{Education}
-    $for(education)$
-    \begin{cvsubsection}
-      {$if(education.location)$$education.location$$endif$}
-      {$if(education.name)$$education.name$$endif$}
-      {$if(education.dates)$$education.dates$$endif$}
-      \begin{itemize}
-        $for(education.notes)$
-        \item $education.notes$
-        $endfor$
-      \end{itemize}
-    \end{cvsubsection}
-    $endfor$
-  \end{cvsection}
-  $endif$
-
   $if(employment)$
   \begin{cvsection}{Employment}
     $for(employment)$
@@ -84,6 +67,23 @@ $endif$
   \end{cvsection}
   $endif$
   
+  $if(education)$
+  \begin{cvsection}{Education}
+    $for(education)$
+    \begin{cvsubsection}
+      {$if(education.location)$$education.location$$endif$}
+      {$if(education.name)$$education.name$$endif$}
+      {$if(education.dates)$$education.dates$$endif$}
+      \begin{itemize}
+        $for(education.notes)$
+        \item $education.notes$
+        $endfor$
+      \end{itemize}
+    \end{cvsubsection}
+    $endfor$
+  \end{cvsection}
+  $endif$
+
   $if(projects)$
   \begin{cvsection}{Software Projects}
     $if(website)$
