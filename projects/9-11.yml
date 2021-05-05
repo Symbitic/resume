@@ -1,0 +1,6 @@
+- title: 9/11 Timeline
+  details:
+    - Modernization of the excellent \href{https://en.wikipedia.org/wiki/The_Terror_Timeline}{Terror Timeline} by Paul Thompson.
+    - Reduced yearly server costs from several hundred dollars to $12/year by refactoring to use GatsbyJS.
+    - >
+      \underline{Utilized}: Gatsby, React.js, Node.js, GraphQL, CSS

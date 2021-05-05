@@ -1,18 +1,14 @@
 ---
 name: Alexander L. Shaw
 website: https://alexshaw.xyz
-# projectsurl: https://alexshaw.xyz/projects/
+linkedin: alex-shaw-8b2450196
+github: Symbitic
 
 address:
   street: 1151 4th Street SW, 714
   city: Washington
   state: D.C.
   zip: 20024
-
-social:
-  linkedin: alex-shaw-8b2450196
-  github: Symbitic
-  twitter: as0355
 
 contacts:
   phone: (815) 590-3550
@@ -37,51 +33,13 @@ employment:
         - Our branch is responsible for maintaining and updating the national database of addresses.
         - Regularly check, process, and merge incoming data from customers, such as the U.S. Postal Service.
         - Created csv2table, a program to make transfering incoming data to tables for manipulation much faster.
-        #- Also created SQLDump, which performs the reverse- dumping the results of a SQL query to a CSV file.
         - Oral communication and problem-solving skills used on a daily basis.
         - Successfully completed training sessions in web scraping and machine learning.
         - \underline{Technologies used} includes Oracle 11g, PL/SQL, Java, RHEL, Unix shell scripting.
 
 projects:
-  #- title: csv2table
-  #  details:
-  #    - Created for the Census Bureau.
-  #    - Our workflow required regularly loading CSV data from customers into an OracleDB table.
-  #    - Regular solution was to use SQLLOADER, a cumbersome and unintuitive process.
-  #    - csv2table was an easy-to-use tool that automated the process, making it much faster to complete.
-  #    - Source code unavailable; proprietary and property of the Census Bureau.
-  #    - >
-  #      \underline{Utilized}: Java, JDBC, SQL, Oracle
-  - title: SqlTest
-    details:
-      - Complete suite of programs for automated acceptance testing of SQL queries.
-      - Encourages collaboration with customers.
-      - Reduced time for executing test suites from 5 minutes to 30 seconds by removing manual database editing. 
-      - >
-        \underline{Utilized}: C++, Qt5, QML, CSV, SQL, SQLite
-  - title: litexa-ts
-    details:
-      - Fork of litexa toolchain refactored to use Typescript.
-      - Litexa is a Alexa Labs project to allow developing Alexa skills in English-like language.
-      - Original uses Coffeescript, which is old and difficult to maintain.
-      - Not a trivial refactor; original version heavily abuses coffeescript and commonjs.
-      - >
-        \underline{Utilized}: Typescript, AWS, Alexa, Node.js, Literate programming
-  - title: standard-release
-    details:
-      - Tool for automating the entire software release process using a single program.
-      - Installs git hooks to enforce a standardized format for commit messages.
-      - Parses commit messages to determine new release version and CHANGELOG entry.
-      - Increments the version number, generates CHANGELOG, commits changes, creates a git tag, and pushes changes upstream.
-      - Decreased incorrect software releases by 75% by enforcing workflow standards.
-      - >
-        \underline{Utilized}: C++, libgit2, cmark, YAML, CommonMark, SemVer, Conventional Commits
-  - title: 9/11 Timeline
-    details:
-      - Modernization of the excellent \href{https://en.wikipedia.org/wiki/The_Terror_Timeline}{Terror Timeline} by Paul Thompson.
-      - Reduced yearly server costs from several hundred dollars to $12/year by refactoring to use GatsbyJS.
-      - >
-        \underline{Utilized}: Gatsby, React.js, Node.js, GraphQL, CSS
+# @PROJECTS@
+
 skills:
   - type: Programming Languages
     details: >

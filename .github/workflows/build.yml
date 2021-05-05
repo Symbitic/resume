@@ -22,7 +22,7 @@ jobs:
           tar -xvf pandoc-2.9.2.1-linux-amd64.tar.gz --strip-components=2 pandoc-2.9.2.1/bin/pandoc
 
       - name: generate
-        run: ./pandoc --template resume.pandoc.tex --pdf-engine=lualatex -o resume.pdf -f markdown alex.yml
+        run: ./build.sh
 
       - name: upload
         uses: softprops/action-gh-release@v1

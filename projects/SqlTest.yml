@@ -1,0 +1,7 @@
+- title: SqlTest
+  details:
+    - Complete suite of programs for automated acceptance testing of SQL queries.
+    - Encourages collaboration with customers and shareholders.
+    - Reduced time for executing test suites from 5 minutes to 30 seconds by removing manual database editing.
+    - >
+      \underline{Utilized}: C++, Qt5, QML, CSV, SQL, SQLite

@@ -35,9 +35,11 @@ $endif$
 $if(website)$
   {{\faGlobe}~}\url{$website$}\linebreak
 $endif$
-$if(social)$
-  $if(social.linkedin)${{\faLinkedin}~}\href{https://www.linkedin.com/in/$social.linkedin$/}{LinkedIn}\linebreak$endif$
-  $if(social.github)${{\faGithub}~}\href{https://github.com/$social.github$}{GitHub}$endif$
+$if(linkedin)$
+  {{\faLinkedin}~}\href{https://www.linkedin.com/in/$linkedin$/}{LinkedIn}\linebreak
+$endif$
+$if(github)$
+  {{\faGithub}~}\href{https://github.com/$github$}{GitHub}
 $endif$
 }
 

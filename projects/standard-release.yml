@@ -1,0 +1,9 @@
+- title: standard-release
+  details:
+    - Tool for automating the entire software release process using a single program.
+    - Installs git hooks to enforce a standardized format for commit messages.
+    - Parses commit messages to determine new release version and CHANGELOG entry.
+    - Increments the version number, generates CHANGELOG, commits changes, creates a git tag, and pushes changes upstream.
+    - Decreased incorrect software releases by 75% by enforcing workflow standards.
+    - >
+      \underline{Utilized}: C++, libgit2, cmark, YAML, CommonMark, SemVer, Conventional Commits
