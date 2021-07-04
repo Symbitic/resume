@@ -1,0 +1,7 @@
+- title: SpotifyXR
+  details:
+    - Virtual reality browser for Spotify playlists.
+    - Fully holographic-like control scheme in WebXR.
+    - Uses serverless Azure Functions for authentication.
+    - >
+      \underline{Utilized}: TypeScript, Babylon.js, WebXR, WebGL, Azure Functions, Azure Static Web Apps

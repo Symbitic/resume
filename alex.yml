@@ -31,10 +31,10 @@ employment:
     description:
       - details:
         - Our branch is responsible for maintaining and updating the national database of addresses.
-        - Regularly check, process, and merge incoming data from customers, such as the U.S. Postal Service.
-        - Created csv2table, a program to make transfering incoming data to tables for manipulation much faster.
-        - Oral communication and problem-solving skills used on a daily basis.
+        - We check, process, and merge incoming data from customers, such as the U.S. Postal Service.
+        - Reduced data load times by over 90% by replacing SQL*Loader with a custom program.
         - Successfully completed training sessions in web scraping and machine learning.
+        - Oral communication and problem-solving skills used on a daily basis.
         - \underline{Technologies used} includes Oracle 11g, PL/SQL, Java, RHEL, Unix shell scripting.
 
 projects:
@@ -46,7 +46,7 @@ skills:
       (\textit{expert}): C, C++, TypeScript, Bash, HTML/CSS (\textit{familiar}): Java, SQL, COBOL (\textit{learning}): Python, Rust, LaTeX
   - type: Software
     details: >
-      (\textit{expert}): Git, Linux, Node.js, Qt5,  React.js, Oracle 11g (\textit{learning}): gRPC, TensorFlow, Amazon Web Services, Alexa
+      (\textit{expert}): Git, Linux, Node.js, Qt5,  React.js, Oracle 11g (\textit{learning}): gRPC, TensorFlow, Amazon Web Services, Azure, WebXR
 
 # otherprojects: litexa-ts, markbook, aws-transcribe-to-srt, timeline-of-terror
 # note: Schedule A and Contacts available upon request

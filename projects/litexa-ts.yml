@@ -2,7 +2,6 @@
   details:
     - Fork of litexa toolchain refactored to use Typescript.
     - Litexa is a Alexa Labs project to allow developing Alexa skills in English-like language.
-    - Original uses Coffeescript, which is old and difficult to maintain.
-    - Not a trivial refactor; original version heavily abuses coffeescript and commonjs.
+    - Replaced old CoffeeScript with TypeScript to improve developer productivity and reduce consumer errors.
     - >
       \underline{Utilized}: Typescript, AWS, Alexa, Node.js, Literate programming
