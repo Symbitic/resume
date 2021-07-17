@@ -4,7 +4,8 @@ declare -a Projects=(
     # "csv2table"
     "SqlTest"
     "computestream"
-    "litexa-ts"
+    #"litexa-ts"
+    "spotifyxr"
     "standard-release"
     #"9-11"
 )
