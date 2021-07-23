@@ -5,9 +5,9 @@ linkedin: alex-shaw-8b2450196
 github: Symbitic
 
 address:
-  street: 1151 4th Street SW, 714
+  street: 1151 4th Street SW, Apt 714
   city: Washington
-  state: D.C.
+  state: DC
   zip: 20024
 
 contacts:
@@ -16,13 +16,13 @@ contacts:
 
 education:
   - dates: Fall 2012—2015, Fall 2017
-    location: Bloomington, IL
+    degree: Bachelor of Science
     name: Illinois State University
     notes:
       - >
-        \textbf{Major:} Information Technology, B.S.
+        \textbf{Major:} Information Technology
       - >
-        \textbf{Coursework:} Databases, Java, C++, Cryptography, Calculus, Systems Development
+        \textbf{Coursework:} Databases, Java, C++, Cryptography, Calculus, Systems Development.
 
 employment:
   - dates: Fall 2018—present
@@ -31,11 +31,11 @@ employment:
     description:
       - details:
         - Our branch is responsible for maintaining and updating the national database of addresses.
-        - We check, process, and merge incoming data from customers, such as the U.S. Postal Service.
-        - Reduced data load times by over 90% by replacing SQL*Loader with a custom program.
+        - Check, process, and merge incoming data from customers, such as the U.S. Postal Service.
+        - Reduced data load times by over 50% by replacing SQL*Loader with a custom program.
         - Successfully completed training sessions in web scraping and machine learning.
         - Oral communication and problem-solving skills used on a daily basis.
-        - \underline{Technologies used} includes Oracle 11g, PL/SQL, Java, RHEL, Unix shell scripting.
+        - \underline{Technologies used} include Oracle 11g, PL/SQL, Java, RHEL, Unix shell scripting.
 
 projects:
 # @PROJECTS@
@@ -43,10 +43,10 @@ projects:
 skills:
   - type: Programming Languages
     details: >
-      (\textit{expert}): C, C++, TypeScript, Bash, HTML/CSS (\textit{familiar}): Java, SQL, COBOL (\textit{learning}): Python, Rust, LaTeX
+      (\textit{expert}): C, C++, TypeScript, Bash, HTML/CSS (\textit{familiar}): Java, SQL, COBOL (\textit{learning}): Python, Rust, LaTeX.
   - type: Software
     details: >
-      (\textit{expert}): Git, Linux, Node.js, Qt5,  React.js, Oracle 11g (\textit{learning}): gRPC, TensorFlow, Amazon Web Services, Azure, WebXR
+      (\textit{expert}): Git, Linux, Node.js, Qt5,  React.js, Oracle 11g (\textit{learning}): gRPC, TensorFlow, Amazon Web Services, Azure, WebXR.
 
 # otherprojects: litexa-ts, markbook, aws-transcribe-to-srt, timeline-of-terror
 # note: Schedule A and Contacts available upon request

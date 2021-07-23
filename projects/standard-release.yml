@@ -5,4 +5,4 @@
     - Increments project version, generates CHANGELOG, creates a git tag, and pushes upstream.
     - Reduced incorrect software releases by 50% by enforcing workflow standards.
     - >
-      \underline{Utilized}: C++, libgit2, cmark, YAML, CommonMark, SemVer, Conventional Commits
+      \underline{Utilized}: C++, libgit2, cmark, YAML, CommonMark, SemVer, Conventional Commits.

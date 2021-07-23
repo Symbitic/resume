@@ -5,4 +5,4 @@
     - Reduced monthly costs by 30% by replacing App Service with Static Web Apps.
     - Increased startup time by removing authentication redirects.
     - >
-      \underline{Utilized}: TypeScript, Babylon.js, WebXR, WebGL, Azure Functions, Azure Static Web Apps
+      \underline{Utilized}: TypeScript, Babylon.js, WebXR, WebGL, Azure Functions, Azure Static Web Apps.
