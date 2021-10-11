@@ -4,4 +4,4 @@
     - Litexa is a Alexa Labs project to allow developing Alexa skills in English-like language.
     - Replaced old CoffeeScript with TypeScript to improve developer productivity and reduce consumer errors.
     - >
-      \underline{Utilized}: Typescript, AWS, Alexa, Node.js, Literate programming
+      \underline{Utilized}: Typescript, AWS, Alexa, Node.js, Literate programming.
