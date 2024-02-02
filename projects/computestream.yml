@@ -1,7 +1,7 @@
 - title: ComputeStream
   details:
     - ComputeStream is a prototype of a web service for uploading and executing GPGPU compute kernels.
-    - Effectively acts as a serverless AWS Lambda/Azure Functions for the GPU.
+    - Acts as a serverless AWS Lambda/Azure Functions for the GPU.
     - Conceived as a solution for the global shortage of graphics cards availability.
     - Relieves customers of the need to own and operate a graphics card, reducing costs and carbon footprint.
     - >

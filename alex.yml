@@ -5,16 +5,16 @@ linkedin: alex-shaw-8b2450196
 github: Symbitic
 
 address:
-  street: 1151 4th Street SW, Apt 714
-  city: Washington
-  state: DC
-  zip: 20024
+  street: 1525 9th Ave Apt 1613
+  city: Seattle
+  state: WA
+  zip: 98101
 
 contacts:
   phone: (815) 590-3550
   email: alex.shaw.as@gmail.com
 
-education:
+education1:
   - dates: Fall 2012—2015, Fall 2017
     degree: Bachelor of Science
     name: Illinois State University
@@ -25,17 +25,26 @@ education:
         \textbf{Coursework:} Databases, Java, C++, Cryptography, Calculus, Systems Development.
 
 employment:
-  - dates: Fall 2018—present
+  - dates: Fall 2018—Dec 2021
     employer: U.S. Census Bureau
     title: IT Specialist (App Software)
     description:
       - details:
-        - Our branch is responsible for maintaining and updating the national database of addresses.
+        - Our branch was responsible for maintaining and updating the national database of addresses.
         - Check, process, and merge incoming data from customers, such as the U.S. Postal Service.
-        - Reduced data load times by over 50% by replacing SQL*Loader with a custom program.
-        - Successfully completed training sessions in web scraping and machine learning.
+        - Reduced data load times by over 200% by replacing SQL*Loader with a custom program.
         - Oral communication and problem-solving skills used on a daily basis.
         - \underline{Technologies used} include Oracle 11g, PL/SQL, Java, RHEL, Unix shell scripting.
+  - dates: Jan 2022-present
+    employer: Microsoft
+    title: Software Engineer I
+    description:
+      - details:
+        - Enterprise support pricing interface.
+        - Helped design new, modern website written in React.
+        - Participated in Hackathon - Demo of VR games playable by amputees.
+        - 100% code coverage and unit tests.
+        - \underline{Technologies used} include TypeScript, React, Redux, RTK, Vitest, Babylon.js
 
 projects:
 # @PROJECTS@

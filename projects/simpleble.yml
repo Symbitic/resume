@@ -1,0 +1,6 @@
+- title: node-simpleble
+  details:
+    - Major contributor to SimpleBLE - cross-platform C++ BLE library.
+    - Migrated node-webbluetooth from noble to simpleble, removing need for custom drivers on Windows and root permissions on Linux.
+    - >
+      \underline{Utilized}: C++, TypeScript, node-addon-api, CMake, BlueZ, CoreBluetooth, WinRT.

@@ -3,6 +3,6 @@
     - Tool for automating the entire software release process using a single program.
     - Installs git hooks to enforce a standardized format for commit messages.
     - Increments project version, generates CHANGELOG, creates a git tag, and pushes upstream.
-    - Reduced incorrect software releases by 50% by enforcing workflow standards.
+    - Reduces incorrect software releases by enforcing workflow standards.
     - >
       \underline{Utilized}: C++, libgit2, cmark, YAML, CommonMark, SemVer, Conventional Commits.
