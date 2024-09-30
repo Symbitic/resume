@@ -5,8 +5,8 @@ declare -a Projects=(
     "SqlTest"
     "computestream"
     #"spotifyxr"
-    "standard-release"
-    #"9-11"
+    #"standard-release"
+    "9-11"
     #"simpleble"
     "litexa-ts"
 )
