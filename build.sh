@@ -1,12 +1,12 @@
 #!/bin/bash
 
 declare -a Projects=(
-    # "csv2table"
+    #"csv2table"
     "SqlTest"
     "computestream"
     #"spotifyxr"
-    #"standard-release"
-    "9-11"
+    "standard-release"
+    #"9-11"
     #"simpleble"
     "litexa-ts"
 )
