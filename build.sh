@@ -4,11 +4,11 @@ declare -a Projects=(
     #"csv2table"
     "SqlTest"
     "computestream"
-    #"spotifyxr"
-    "standard-release"
-    #"9-11"
+    "spotifyxr"
+    #"standard-release"
+    "9-11"
     #"simpleble"
-    "litexa-ts"
+    #"litexa-ts"
 )
 
 PROJECTS=""
