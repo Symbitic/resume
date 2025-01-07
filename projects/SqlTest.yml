@@ -2,6 +2,6 @@
   details:
     - Complete suite of programs for automated acceptance testing of SQL queries.
     - Encourages collaboration with customers and shareholders.
-    - Reduced testing time to 30 under seconds by removing manual database editing and reviewing.
+    - Reduced testing time to under 15 seconds by removing manual database editing/reviewing.
     - >
       \underline{Utilized}: C++, Qt5, QML, CSV, SQL, SQLite.
