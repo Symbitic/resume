@@ -2,7 +2,7 @@
   details:
     - ComputeStream is a prototype of a web service for uploading and executing GPGPU compute kernels.
     - Acts as a serverless AWS Lambda/Azure Functions for the GPU.
-    - Conceived as a solution for the global shortage of graphics cards availability.
+    - Conceived as a solution for the global shortage of graphics cards during COVID19.
     - Relieves customers of the need to own and operate a graphics card, reducing costs and carbon footprint.
     - >
       \underline{Utilized}: C++, gRPC, OpenCL.
