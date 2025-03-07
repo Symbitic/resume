@@ -4,6 +4,5 @@
     - Our workflow required regularly loading CSV data from customers into an OracleDB table.
     - Regular solution was to use SQLLOADER, a cumbersome and unintuitive process.
     - csv2table was an easy-to-use tool that automated the process, making it much faster to complete.
-    - Source code unavailable; proprietary and property of the Census Bureau.
     - >
       \underline{Utilized}: Java, JDBC, SQL, Oracle
