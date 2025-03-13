@@ -3,12 +3,12 @@
 declare -a Projects=(
     #"csv2table"
     "SqlTest"
-    #"spotifyxr"
+    "spotifyxr"
     "computestream"
     #"standard-release"
     "9-11"
     #"simpleble"
-    "litexa-ts"
+    #"litexa-ts"
 )
 
 PROJECTS=""
