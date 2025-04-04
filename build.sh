@@ -2,11 +2,11 @@
 
 declare -a Projects=(
     #"csv2table"
-    #"SqlTest"
+    "SqlTest"
     "spotifyxr"
-    #"computestream"
-    "standard-release"
-    "9-11"
+    "computestream"
+    #"standard-release"
+    #"9-11"
     #"simpleble"
     "litexa-ts"
 )
